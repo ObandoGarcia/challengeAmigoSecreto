@@ -53,9 +53,6 @@ function agregarLista(){
 
 //funcion para sortear amigos del arreglo
 function sortearAmigo(){
-    //limpiar la lista previa
-    limpiarListaPrevia();
-
     if(amigos.length === 0){
         alert("La lista de amigos esta vacía agrega más nombre de tus amigos");
     } else if (amigos.length <= 2){
@@ -77,8 +74,4 @@ function sortearAmigo(){
     }
 }
 
-//funcion para limpiar la lista previa
-function limpiarListaPrevia(){
-    document.querySelector('#resultado').value = '';
-}
 
